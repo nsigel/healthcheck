@@ -2,7 +2,7 @@ interface Props {
   checked?: boolean;
   className?: string;
   name: string;
-  onChange?: (e: React.ChangeEvent<HTMLButtonElement>) => void;
+  onChange?: React.ChangeEventHandler<HTMLInputElement>;
 }
 
 const Checkbox = (props: Props) => {
