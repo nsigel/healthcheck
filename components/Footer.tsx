@@ -6,6 +6,7 @@ const Footer = () => {
       No results of this form are saved.
       <img
         className="ml-2 cursor-pointer"
+        alt="github"
         /* eslint-disable @typescript-eslint/no-unsafe-member-access */
         src={Github.src}
         width={16}
