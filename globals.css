@@ -3,22 +3,23 @@
 @tailwind utilities;
 
 #__next {
-	height: 100vh;
-	width: 100vw;
-	font-family: "Inter";
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  font-family: "Inter";
 }
 
 .noSelect,
 img {
-	-webkit-user-drag: none;
-	user-select: none;
+  -webkit-user-drag: none;
+  user-select: none;
 }
 input::placeholder {
-	font-weight: 600;
-	color: #808080;
+  font-weight: 600;
+  color: #808080;
 }
 
-.percent {
-	height: 75vh;
-	width: 700px;
+.size {
+  height: 75vh;
+  width: 700px;
 }

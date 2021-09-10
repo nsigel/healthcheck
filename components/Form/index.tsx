@@ -40,27 +40,34 @@ const Form = () => {
 
   return (
     <div className="mt-3 flex flex-col h-full">
-      <Label text="Your first and last name" />
-      <Input
-        placeholder="Name"
-        name="name"
-        onChange={formik.handleChange}
-        value={formik.values.name}
-      />
-      <Label text="Your school email" />
-      <Input
-        placeholder="Email"
-        name="email"
-        type="email"
-        onChange={formik.handleChange}
-        value={formik.values.email}
-      />
-      <Label text="Are you vaccinated?" />
-      <Checkbox
-        name="vaccinated"
-        onChange={formik.handleChange}
-        checked={formik.values.vaccinated}
-      />
+      <div>
+        <Label text="Your first and last name" />
+        <Input
+          placeholder="Name"
+          name="name"
+          onChange={formik.handleChange}
+          value={formik.values.name}
+        />
+      </div>
+      <div>
+        <Label text="Your school email" />
+        <Input
+          placeholder="Email"
+          name="email"
+          type="email"
+          onChange={formik.handleChange}
+          value={formik.values.email}
+        />
+      </div>
+      <div className="flex flex-col">
+        <Label text="Are you vaccinated?" />
+        <Checkbox
+          name="vaccinated"
+          onChange={formik.handleChange}
+          checked={formik.values.vaccinated}
+          className="mb-3"
+        />
+      </div>
       <Button onClick={formik.submitForm} className="font-bold mt-auto">
         Submit
       </Button>
