@@ -11,7 +11,7 @@ export default function Home() {
 					rel="stylesheet"
 				/>
 			</Head>
-			<div className="flex h-screen w-full justify-center items-center flex-row bg-dark">
+			<div className="flex p-8 h-screen w-full justify-center items-center flex-row bg-dark">
 				<div className="percent bg-light rounded-md text-white font-medium p-4 text-lg flex flex-col">
 					Submit survey
 					<Form />
