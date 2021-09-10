@@ -58,3 +58,4 @@ package.json
 # config files
 tailwind.config.js
 postcss.config.js
+tsconfig.json
