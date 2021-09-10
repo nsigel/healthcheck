@@ -15,7 +15,7 @@
     "project": ["./tsconfig.json"],
     "tsconfigRootDir": "./"
   },
-  "plugins": ["@typescript-eslint", "import", "next"],
+  "plugins": ["@typescript-eslint", "import", "@next/next"],
   "rules": {
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "@typescript-eslint/no-floating-promises": "off",
@@ -26,6 +26,7 @@
   "extends": [
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
-    "prettier"
+    "prettier",
+    "plugin:@next/next/recommended"
   ]
 }

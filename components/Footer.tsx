@@ -4,6 +4,7 @@ const Footer = () => {
   return (
     <footer className="h-8 p-2 px-4 flex items-center text-xs text-white font-semibold w-full bg-purple2">
       No results of this form are saved.
+      {/* eslint-disable @next/next/no-img-element */}
       <img
         className="ml-2 cursor-pointer"
         alt="github"
