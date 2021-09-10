@@ -1,4 +1,4 @@
-# NYC Schools Healthcheck Automation
+# NYC Schools Covid-19 Health Check Automation
 
 #### Making submitting your daily health check at school easy.
 
