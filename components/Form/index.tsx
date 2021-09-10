@@ -60,6 +60,7 @@ const Form = () => {
 				name="vaccinated"
 				onChange={formik.handleChange}
 				checked={formik.values.vaccinated}
+				className="mb-2"
 			/>
 			<Button onClick={formik.submitForm} className="font-bold mt-auto">
 				Submit

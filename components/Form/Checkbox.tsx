@@ -13,7 +13,7 @@ const Checkbox = (props: Props) => {
 			onChange={props.onChange}
 			type="checkbox"
 			className={
-				`form-checkbox text-purple focus:outline-purple2` + props.className
+				`form-checkbox text-purple focus:outline-purple2 ` + props.className
 			}
 		/>
 	);

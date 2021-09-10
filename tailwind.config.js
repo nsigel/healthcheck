@@ -12,6 +12,10 @@ module.exports = {
 				light: "#1f1a32",
 				black: "#110f1c",
 			},
+			spacing: {
+				124: "31rem",
+				"7/10": "70vw",
+			},
 		},
 	},
 	variants: {
