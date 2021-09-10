@@ -6,10 +6,16 @@
     "build": "next build",
     "start": "next start",
     "commit": "cz",
-    "lint": "cross-env NODE_ENV=development eslint . --cache --ext .ts,.tsx",
-    "prettier": "prettier -c **/*.{ts,tsx} --write",
-    "prettier:check": "prettier -c **/*.{ts,tsx}",
+    "lint": "eslint",
+    "prettier": "prettier -c --write",
+    "prettier:check": "prettier -c",
     "prepare": "husky install .config/husky"
+  },
+  "lint-staged": {
+    "**/*.{ts,tsx,json,css}": [
+      "yarn prettier",
+      "yarn lint"
+    ]
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.6.1",
@@ -29,11 +35,11 @@
     "@typescript-eslint/eslint-plugin": "^4.31.0",
     "@typescript-eslint/parser": "^4.31.0",
     "autoprefixer": "^10.3.1",
-    "cross-env": "^7.0.3",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.24.2",
     "husky": "^7.0.2",
+    "lint-staged": "^11.1.2",
     "postcss": "^8.3.6",
     "prettier": "^2.4.0",
     "tailwindcss": "^2.2.7"
