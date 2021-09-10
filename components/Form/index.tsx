@@ -60,12 +60,12 @@ const Form = () => {
         name="vaccinated"
         onChange={formik.handleChange}
         checked={formik.values.vaccinated}
-        className="mb-2"
+        className="mb-3"
       />
       <Button onClick={formik.submitForm} className="font-bold mt-auto">
         Submit
       </Button>
-      <div className="text-xs font-medium text-gray-500 mt-3">
+      <div className="text-xs font-medium text-gray-500 mt-2">
         *Please only fill this form if you have are aware of the questions on the original form and
         are safe to attend school.
       </div>
