@@ -31,6 +31,7 @@ const Form = () => {
         _RequestVerificationToken: "https://github.com/fourwadu/healthcheck@" + version,
         ...isVaccinated,
       });
+      /* eslint-disable @typescript-eslint/no-unsafe-member-access */
       if (response.data.success) {
         window.location.href = "/success";
       }
