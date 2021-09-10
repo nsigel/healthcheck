@@ -65,7 +65,7 @@ const Form = () => {
 			<Button onClick={formik.submitForm} className="font-bold mt-auto">
 				Submit
 			</Button>
-			<div className="text-xs font-medium text-gray-500 mt-2">
+			<div className="text-xs font-medium text-gray-500 mt-3">
 				*Please only fill this form if you have are aware of the questions on
 				the original form and are safe to attend school.
 			</div>
