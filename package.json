@@ -1,5 +1,6 @@
 {
 	"version": "0.01",
+	"license": "MIT",
 	"scripts": {
 		"dev": "next dev",
 		"build": "next build",
