@@ -4,10 +4,13 @@ import Input from "./Input";
 import Label from "./Label";
 import { useFormik } from "formik";
 import axios from "axios";
+import { useState } from "react";
 
 import { version } from "../../package.json";
 
 const Form = () => {
+  const [err, setErr] = useState("");
+
   const formik = useFormik({
     initialValues: {
       vaccinated: false,
@@ -34,12 +37,17 @@ const Form = () => {
       /* eslint-disable @typescript-eslint/no-unsafe-member-access */
       if (response.data.success) {
         window.location.href = "/success";
+      } else {
+        console.log(response.data);
+        /* eslint-disable @typescript-eslint/no-unsafe-call */
+        setErr(response.data.message || response.data.errors.join(", "));
       }
     },
   });
 
   return (
-    <div className="mt-3 flex flex-col h-full">
+    <div className="flex flex-col h-full">
+      {err ? <div className="text-red text-xs h-4">{err}</div> : null}
       <div>
         <Label text="Your first and last name" />
         <Input
