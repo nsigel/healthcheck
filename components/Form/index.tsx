@@ -46,7 +46,7 @@ const Form = () => {
   });
 
   return (
-    <div className="flex flex-col h-full">
+    <div className="flex flex-col h-full noSelect">
       {err ? <div className="text-red text-xs h-4">{err}</div> : null}
       <div>
         <Label text="Your first and last name" />
