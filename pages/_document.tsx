@@ -11,7 +11,7 @@ export default class DocumentComponent extends Document {
           />
           <meta
             httpEquiv="Content-Security-Poicy"
-            content="default-src 'self'; img-src https://*; child-src 'none'; script-src: https://vitals.vercel-insights.com"
+            content="default-src 'self' vitals.vercel-insights.com/*"
           />
         </Head>
         <body>
