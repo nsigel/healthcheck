@@ -57,5 +57,6 @@ package.json
 
 # config files
 tailwind.config.js
+tsconfig.json
 postcss.config.js
 tsconfig.json
